@@ -8,7 +8,7 @@
   },
   "name": "wa_client",
   "description": "Read messages without telling others that you read them!",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/Lobzikk/WA_Client/issues"
   },
-  "homepage": "https://github.com/Lobzikk/WA_Client#readme"
+  "homepage": "https://github.com/Lobzikk/WA_Client#readme",
+  "devDependencies": {},
+  "keywords": [
+    "whatsapp"
+  ]
 }

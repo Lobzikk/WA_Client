@@ -45,7 +45,7 @@ client.on("message",async msg=>{ //TODO: Make an english version
     console.log("<—————————————————————————————————————————————————————————————————————————————————————>");
     let date_ob=new Date();
     connection.query(
-        `INSERT INTO ${process.env.TABLE}(body,author,chname,whensent) VALUES(?, ?, ?, ?)`,
+        `INSERT INTO ${process.env.TABLE}(body,phone_number,channel_name,date_received) VALUES(?, ?, ?, ?)`,
         [msg.body,JSON.stringify((await msg.getContact()).id.user),JSON.stringify((await msg.getChat()).name),`${date_ob.getFullYear()}-${('0' + (date_ob.getMonth() + 1)).slice(-2)}-${("0" + date_ob.getDate()).slice(-2)}`],
         function (err,results) {
             if (err){
