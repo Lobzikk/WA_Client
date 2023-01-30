@@ -18,7 +18,7 @@
     
     TABLE="messages"
  3. Run `npm i` in the console in this folder;
- 4. Run `node index`to run the client
+ 4. Run `node index`to run the client;
  5. Scan the QR-code to log in (required only when launching the client for the first time)
 <h1>TODO List</h1>
 
