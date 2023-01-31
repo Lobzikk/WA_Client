@@ -1,0 +1,7 @@
+Connected to the DB successfully!
+Client ready!
+Body of the message:
+Message author (phone number):
+Message author (contact name):
+Message author (id):
+Data added!
