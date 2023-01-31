@@ -1,7 +1,7 @@
 require("dotenv").config();
 console.log(process.pid);//to kill the process if needed
 const mysql2=require("mysql2");
-const langs=require("./langs/index.js");
+const langs=require('./langs.js');
 const [en,ru]=[langs.en,langs.ru];
 const {Client, LocalAuth}=require("whatsapp-web.js");
 const qrcode=require("qrcode-terminal");
