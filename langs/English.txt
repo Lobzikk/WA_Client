@@ -1,3 +1,4 @@
+Error:
 Connected to the DB successfully!
 Client ready!
 Body of the message:

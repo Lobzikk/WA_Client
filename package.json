@@ -8,7 +8,7 @@
   },
   "name": "wa_client",
   "description": "Read messages without telling others that you read them!",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
