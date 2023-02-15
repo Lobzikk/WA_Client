@@ -1,5 +1,9 @@
 const fs=require("fs");
-const english=fs.readFileSync('./langs/English.txt','utf-8');
-const russian=fs.readFileSync('./langs/Russian.txt','utf-8');
+const english=fs.readFileSync('./langs/EnglishMain.txt','utf-8');
+const russian=fs.readFileSync('./langs/RussianMain.txt','utf-8');
+const ruSets=fs.readFileSync('./langs/RussianSettings.txt','utf-8');
+const enSets=fs.readFileSync('./langs/EnglishSettings.txt','utf-8');
 module.exports.ru=russian.split("\n");
 module.exports.en=english.split("\n");
+module.exports.ruSettings=ruSets.split("\n");
+module.exports.enSettings=enSets.split("\n");

@@ -1,0 +1,9 @@
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| ordnum        | int unsigned | NO   | PRI | NULL    | auto_increment |
+| body          | varchar(150) | NO   |     | NULL    |                |
+| phone_number  | varchar(150) | NO   |     | NULL    |                |
+| channel_name  | varchar(150) | NO   |     | NULL    |                |
+| date_received | date         | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
