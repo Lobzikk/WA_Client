@@ -22,8 +22,10 @@ if (consoleInput(phrases[0])=="Yes"){
     }
 }
 for (let i = 8; i < phrases.slice(9).length; i++) {
-    const element = array[i];
-    
+    answers[i]=consoleInput(phrases[i]);
 }
 console.log(answers);
-fs.writeFileSync('.env',`HOST="${answers[0]}"\nUSER="${answers[1]}"\nDATABASE="${answers[2]}"\nPASSWORD="${answers[3]}"\nTABLE="${answers[4]}"\nLANGUAGE="${answers[5]}"\nFORM="${answers[6]}"`)
+fs.writeFileSync('.env','utf-8');
+for (let i = 0; i < params.length; i++){
+    fs.AppendFileSync(params[i]+"="+answers[i]);
+}
