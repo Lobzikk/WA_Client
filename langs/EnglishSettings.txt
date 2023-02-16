@@ -1,9 +1,9 @@
 VVV Do you want to use mySQL database for your Whatsapp messages to be logged in it? Yes/No
 VVV The table where your messages will be stored should have columns like that:
-VVV Where do you host your DB? (default is "localhost") 
-VVV What is your username? (default is "root") 
+VVV Where do you host your DB?
+VVV What is your username?
 VVV Database's name? 
 VVV Password for mySQL account/user? 
 VVV Table's name?
-VVV Preferable language? (default is English) (en/ru)
-VVV Short or full logging? (default is short) (sh/full) 
+VVV Preferable language? (en/ru)
+VVV Short or full logging? (short/full) 

@@ -1,14 +1,13 @@
 require("dotenv").config();
-console.log(process.pid);//to kill the process if needed
+console.log(`PID:${process.pid}`);//to kill the process if needed
 const mysql2=require("mysql2");
 const langs=require('./langs.js');
-const [en,ru]=[langs.en,langs.ru];
 const {Client, LocalAuth}=require("whatsapp-web.js");
 const qrcode=require("qrcode-terminal");
 const shortFl=process.argv[2];
-let phrases=en;
+let phrases=langs.en;
 if (process.argv[3]="ru") {
-    phrases=ru;
+    phrases=langs.ru;
 }
 const connection=mysql2.createConnection({
     host:process.env.HOST,
@@ -37,7 +36,7 @@ client.on("ready",()=>{
     }, 5000);
 });
 client.on("message",async msg=>{
-    if (shortFl=="short"){
+    if (process.env.FORM=="short"){
         console.log(`${JSON.stringify((await msg.getChat()).name)},${JSON.stringify((await msg.getContact()).id.user)},${msg.body}`) //TODO: Display contact's name if it's not undefined
     }else{
     console.log(`${phrases[3]} ${msg.body}\n 
@@ -50,7 +49,8 @@ client.on("message",async msg=>{
     }}
     console.log("<—————————————————————————————————————————————————————————————————————————————————————>");
     let date_ob=new Date();
-    connection.query(
+    if (process.env.HOST!="undefined"){
+        connection.query(
         `INSERT INTO ${process.env.TABLE}(body,phone_number,channel_name,date_received) VALUES(?, ?, ?, ?)`,
         [msg.body,JSON.stringify((await msg.getContact()).id.user),JSON.stringify((await msg.getChat()).name),`${date_ob.getFullYear()}-${('0' + (date_ob.getMonth() + 1)).slice(-2)}-${("0" + date_ob.getDate()).slice(-2)}`],
         function (err,results) {
@@ -61,6 +61,6 @@ client.on("message",async msg=>{
                 console.log(phrases[8]);
             }
         }
-    )
+    )}
 });
 client.initialize();

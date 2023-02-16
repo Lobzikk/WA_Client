@@ -5,23 +5,13 @@
 <h2>How to use the WA_Client?</h2>
 
  1. Install the code in the needed folder;
- 2. Create an `.env` file in the same folder as the code and write data in it like that: 
-
-    ```
-    HOST="localhost"
-    
-    USER="root"
-    
-    DATABASE="wa"
-    
-    PASSWORD="password"
-    
-    TABLE="messages"
- 3. Run `npm i` in the console in this folder;
- 4. Run `node index`to run the client;
+ 2. Run `npm i` in the console in this folder;
+ 3. Launch `npm manage` to set up client;
+ 4. Run `node index` to run the client;
  5. Scan the QR-code to log in (required only when launching the client for the first time)
 <h1>TODO List</h1>
 
- - [ ] Make a more automatic setting up process
- - [ ] Translate the client in English
+ - [x] Make a more automatic setting up process
+ - [x] Translate the client in English
  - [ ] Make a GUI
+ - [ ] Add PostgreSQL DB support
