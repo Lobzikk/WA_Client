@@ -8,7 +8,8 @@
  2. Run `npm i` in the console in this folder;
  3. Launch `npm manage` to set up client;
  4. Run `node index` to run the client;
- 5. Scan the QR-code to log in (required only when launching the client for the first time)
+ 5. Scan the QR-code with WhatsApp on your phone to log in (required only when launching the client for the first time)
+
 <h1>TODO List</h1>
 
  - [x] Make a more automatic setting up process
