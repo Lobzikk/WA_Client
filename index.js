@@ -4,9 +4,8 @@ const mysql2=require("mysql2");
 const langs=require('./langs.js');
 const {Client, LocalAuth}=require("whatsapp-web.js");
 const qrcode=require("qrcode-terminal");
-const shortFl=process.argv[2];
 let phrases=langs.en;
-if (process.argv[3]="ru") {
+if (process.env.LANGUAGE="ru") {
     phrases=langs.ru;
 }
 const connection=mysql2.createConnection({
