@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      @font-face {
+        font-family: 'Lekton';
+        src: local('Lekton-Regular'),
+        url('fonts/Lekton-Regular.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'Cousine';
+        src: local('Cousine-Regular'),
+        url('fonts/Cousine-Regular.ttf') format('truetype');
+      }
+      body {
+        padding: 0vw;
+        margin: 0vw;
+        font-family:'Cousine';
+      }
+      h1 {
+        margin: 0vw auto 2vw;
+      }
+      div {
+        padding: 2vw;
+      }
+      .TechData {
+        position: fixed;
+        width: 39vw;
+        height: 100vw;
+        left: 61vw;
+        border-left: #000 0.5vw solid;
+        font-family: 'Cousine';
+      }
+    </style>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <title>WA stealthy client</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <div class="TechData" style="width: 20vw;">
+      <h1>Software info</h1>
+      Node.js v.:<span id="node-version"></span><br>
+      Chromium v.:<span id="chrome-version"></span><br>
+      Electron v.:<span id="electron-version"></span><br>
+    </div>
+    <div>
+    <h1>WA stealthy client</h1>
+  </div>
   </body>
 </html>
