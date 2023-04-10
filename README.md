@@ -7,11 +7,14 @@
  1. Install the code in the needed folder;
  2. Run `npm i` in the console in this folder;
  3. Launch `npm manage` to set up client;
- 4. Run `node index` to run the client;
- 5. Scan the QR-code to log in (required only when launching the client for the first time)
+ 4. Run `electron .` to run the client;
+ 5. Scan the QR-code which appears if you toggle developer tools (Ctrl+Shift+I) in the console tab to log in (required only when launching the client for the first time for a long time) with your mobile whatsapp app
+
+<h2>Are there any hidden features?</h2>
+<p>Yes, on the loading screen you can click on the right to speed up the animation and on the left to slow down the animation. You can also press Space key to give ball a little boost.</p>
 <h1>TODO List</h1>
 
  - [x] Make a more automatic setting up process
  - [x] Translate the client in English
- - [ ] Make a GUI
+ - [x] Make a GUI
  - [ ] Add PostgreSQL DB support

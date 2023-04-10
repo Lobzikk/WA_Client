@@ -1,9 +1,16 @@
 Error:
 Connected to the DB successfully!
-Client ready!
+Client ready
 Body of the message:
 Message author (phone number):
 Message author (contact name):
 Message author (id):
 Group?
 Data added!
+MySQL status:
+Connected
+Connection error
+Software info
+Client status:
+Disconnected
+Connecting...
