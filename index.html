@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      *{
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: 'Lekton';
+        src: local('Lekton-Regular'),
+        url('fonts/Lekton-Regular.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'Cousine';
+        src: local('Cousine-Regular'),
+        url('fonts/Cousine-Regular.ttf') format('truetype');
+      }
+      body {
+        padding: 0vw;
+        margin: 0vw;
+        font-family:'Cousine';
+        background-color: #f3f3f3;
+      }
+      h1 {
+        margin: 0vw auto 2vw;
+      }
+      div {
+        padding: 2vw;
+      }
+      .TechData {
+        text-align: justify;
+        position: fixed;
+        width: 39vw;
+        height: 100vw;
+        left: 61vw;
+        border-left: #000 0.5vw solid;
+        font-family: 'Cousine';
+      }
+      #client-version,#node-version,#chrome-version,#electron-version {
+        color: #03BBF9;
+      }
+      #mysql-status{
+        color: #00e000;
+      }
+      #client-status{
+        color: #bebebe;
+      }
+      #messages{
+        overflow-y: scroll;
+        width: 60vw;
+        height: 72vh;
+        top: 15vh;
+        left: 0vw;
+        position: absolute;
+      }
+      .message{
+        max-height: inherit;
+        max-width: inherit;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <title>WA stealthy client</title>
+  </head>
+  <body>
+    <div class="TechData" style="width: 20vw;">
+      <h1 id="software-info-text"></h1>
+      Node.js v.: <span id="node-version"></span><br>
+      Chromium v.: <span id="chrome-version"></span><br>
+      Electron v.: <span id="electron-version"></span><br>
+      Client v.: <span id="client-version"></span><br><br>
+      <span id="mysql-status-text"></span><span id="mysql-status"></span><br>
+      <span id="client-status-text"></span><span id="client-status"></span><br>
+    </div>
+    <div>
+    <h1>WA stealthy client</h1>
+    <div id="messages"></div>
+  </div>
+  </body>
+</html>
