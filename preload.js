@@ -26,7 +26,6 @@ window.addEventListener('DOMContentLoaded',()=>{
     client.on('auth_failure',(err)=>{
         document.getElementById('client-status').style.color="#e00";
         msgLog('Error',err);
-        console.log('joe mama');
         replaceText('client-status',phrases[11]);
     });
     client.on('disconnected',()=>{
